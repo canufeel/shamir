@@ -88,7 +88,7 @@ impl SecretData {
         let mut rng = thread_rng();
         let mut rand_container = [0u8, threshold - 1];
         for c in secret.as_bytes() {
-            rng.fill_bytes(&mut rand_container);
+            rng.fill(&mut rand_container);
             let mut coef: Vec<u8> = vec![*c];
             for r in rand_container.iter() {
                 coef.push(*r);

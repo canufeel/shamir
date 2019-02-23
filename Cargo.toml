@@ -7,5 +7,6 @@ homepage = "https://github.com/Nebulosus/shamir"
 repository = "https://github.com/Nebulosus/shamir.git"
 license = "MIT"
 
-[dependencies]
-rand = "0.3"
+[dependencies.rand]
+version = "0.6.5"
+features = ["wasm-bindgen"]
